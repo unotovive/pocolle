@@ -205,6 +205,10 @@ a:focus-visible, .button:focus-visible { outline: 2px solid var(--accent); outli
 }
 .button:hover { color: var(--ink); border-color: rgba(255, 255, 255, 0.4); transform: translateY(-1px); }
 .button::after { content: "→"; color: var(--ink-faint); }
+.button.primary { background: var(--ink); border-color: transparent; color: #0b0d18; font-weight: 700; }
+.button.primary:hover { color: #0b0d18; background: #ffffff; }
+.button.primary::after { content: "↗"; color: rgba(11, 13, 24, 0.55); }
+.cta { margin: 16px 0 12px !important; }
 
 /* ---- 文書のページ（サポート、プライバシーポリシー） */
 .doc { width: min(720px, 100% - 48px); margin-inline: auto; padding: clamp(28px, 6vw, 64px) 0 72px; }
